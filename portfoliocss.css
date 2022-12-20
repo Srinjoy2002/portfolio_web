@@ -15,7 +15,8 @@
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255)),url(studytable_bg.jpg);
+    background: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+    /* background: url('bg_grey.jpg'); */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -31,8 +32,8 @@ header{
     height: 55px;
     width: 55px;
     background: transparent;
-    border: 2px solid #0f88eb;
-    color: hsl(207, 88%, 49%);
+    border: 2px solid #9e0000;
+    color: #9e0000;
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -46,13 +47,13 @@ nav .hamb{
     right: 3%;
     top: 60px;
     z-index: 5;
-    background: white;
+    background: transparent;
     position: absolute;
     cursor: pointer;
 }
 nav .hamb span{
     display: block;
-    background:hsl(207, 88%, 49%);
+    background:#9e0000;
     width: 100%;
     height: 3px;
     transition: .3s;
@@ -75,21 +76,21 @@ nav .nav-list li a{
     font-weight: 600;
 }
 nav .nav-list li:not(:last-child) a:hover{
-    color: hsl(207, 88%, 49%);
+    color: #9e0000;
     transition: .4s;
 }
 nav .nav-list li.btn a{
     display: inline-block;
     background: transparent;
-    border: 2px solid hsl(207, 88%, 49%);
+    border: 2px solid #9e0000;
     padding: 9px 28px;
     border-radius: 30px;
     line-height: 1.3;
-    color: hsl(207, 88%, 49%);
+    color: #9e0000;
     font-weight: 500;
 }
 nav .nav-list li.btn:hover a{
-    background: hsl(207, 88%, 49%);
+    background: #9e0000;
     color: white;
     border: 2px solid transparent;
     transition: .4s;
@@ -108,11 +109,123 @@ nav .nav-list li.btn:hover a{
     margin: 20px 0px 20px;
 }
 span{
-    color: #0f88eb;
+    color: #9e0000;
 
 }
 .container .hero-text h3{
     color: blueviolet;
     font-weight: 400;
     font-size: 17px;
+}
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    color: blue;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: black;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgba(255,255,255,0.1);
+    margin-bottom: 35px;
+}
+.social align-self:hover{
+    transform: scale(1.1);
+    background:#9e0000;
+    transition: .4s;
+}
+.container .hero-text button{
+    color: white;
+    background: #0f88eb;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #9e0000;
+    border-radius: 30px;
+}
+.container .hero-text button:hover{
+    background: transparent;
+    border: 2px solid #9e0000;
+    color: #9e0000;
+    transform: .4s;
+}
+.bottom{
+    margin-top: 243px;
+    padding-bottom: 40px;
+}
+.bottom p{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+@media screen and (max-width:930px)  {
+    nav .hamb{
+        display: initial;
+    }
+    .click{
+        top: 46px;
+
+    }
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child{
+        transform: rotate(-40deg)
+    }
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child{
+        transform: rotate(40deg);
+        top: 0,
+    }
+    nav .nav-list{
+        position: absolute;
+        top: 90px;
+        right: -65%;
+        bottom:0;
+        width: 60%;
+        height: 50%;
+        background: rgba(219, 38, 38, 0.256);
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+    nav .nav-list li{
+        display: block;
+
+    }
+    nav .nav-list li a{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    nav .nav-list li.btn a{
+        position :absolute;
+        bottom: 0%;
+        right: 20%;
+        left: 20%;
+        padding:7px 15px;
+        font-size: 14px;
+    }
+    nav .nav-list.open{
+        right: 0;
+    }
 }
