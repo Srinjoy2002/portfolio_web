@@ -209,7 +209,7 @@ span{
         bottom:0;
         width: 60%;
         height: 50%;
-        background:  rgba(131, 123, 123, 1);
+        background:  rgba(131, 123, 123, 0.311);
         z-index: 2;
         padding: 6% 9%;
         transition: .3s right;

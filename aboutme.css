@@ -13,6 +13,22 @@
     font-size: 75px;
     text-align: center;
 } */
+h2{
+    color: #49c5b6;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    border: #ffffff;
+}
+a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
 * {
     margin: 0;
     padding: 0;
@@ -29,6 +45,7 @@
     background-position: center;
     position: relative;
   }
+
   
   /* .background-img {
     background-image: url("studytable_bg.jpg");
@@ -49,20 +66,22 @@
   }
   
   .box {
-    position: absolute;
+    size: cover;
+    position:fixed ;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 600px;
-    height: 700px;
+    width: 80%;
+    height: 80%;
     background: #2c2d37a6;
-    box-sizing: border-box;
+    box-sizing: content-box;
     overflow: hidden;
     box-shadow: 0 20px 50px rgb(226, 230, 255);
     border: 2px solid ;
     color: white;
     padding: 50px;
   }
+ 
   
   .box:before {
     content: '';
@@ -125,9 +144,9 @@
   .box span:before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 2px;
-    background: #49c5b6;
+    width: 100%;;
+    height: 3px;
+    background: #49c5b743;
     animation: animate 4s linear infinite;
   }
   
@@ -153,6 +172,11 @@
       transform-origin: right;
   
     }
+    ul {
+        display: block;
+        list-style-type: disc;
+        position: relative;
+      }
    
     }
   
