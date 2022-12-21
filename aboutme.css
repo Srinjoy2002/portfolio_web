@@ -1,18 +1,4 @@
-/* *{
-    background-image: url('/bg_grey.jpg');
-}
-.infoContainer{
-    background-color: transparent;
-    height: 120vh;
-    width: 100vh;
-    margin: 144px auto;
-    display: flex;
-}
-.head{
-    color: #49c5b6;
-    font-size: 75px;
-    text-align: center;
-} */
+
 h2{
     color: #49c5b6;
 }
@@ -67,15 +53,15 @@ a:hover{
   
   .box {
     size: cover;
-    position:fixed ;
+    position:fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     background: #2c2d37a6;
     box-sizing: content-box;
-    overflow: hidden;
+    overflow: scroll;
     box-shadow: 0 20px 50px rgb(226, 230, 255);
     border: 2px solid ;
     color: white;
