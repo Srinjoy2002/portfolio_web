@@ -93,10 +93,10 @@ a:hover{
     left: 15px;
     right: 15px;
     bottom: 15px;
-    border: 1px solid #f0a591;
+    /* border: 1px solid #f0a69100; */
     padding: 20px;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(9, 0, 0, 0.5);
+    box-shadow: 0 5px 10px rgba(9, 0, 0, 0);
   
   }
   

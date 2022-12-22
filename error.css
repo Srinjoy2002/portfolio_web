@@ -6,12 +6,15 @@
     outline: none;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
     height: 100vh;
     background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
     background-size: 400%;
+    background-image: url(studytable_bg.jpg);
+    background-size: contain;
 }
 
 #error-page {
@@ -23,8 +26,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.001);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.427);
 }
 
 #error-page .content {
@@ -48,7 +51,7 @@ body {
     background-size: 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
     animation: animate 10s ease-in-out infinite;
 }
 
@@ -90,14 +93,14 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .content p {
     font-size: 1.2em;
-    color: #0d0d0d;
+    color: #ffffff;
 }
 
 .content .btns {
